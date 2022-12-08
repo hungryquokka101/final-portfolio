@@ -26,6 +26,15 @@ body {
     background-color: #020c63;
 }
 
+.card-img-top {
+    height: 400px;
+    width: 100%;
+}
+
+.card-body {
+    height: 120px;
+}
+
 button {
     background-color: #020c63;
     color: #fff;
