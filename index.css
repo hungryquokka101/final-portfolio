@@ -1,0 +1,123 @@
+body {
+    font-family: "Sofia-Pro", sans-serif;
+    background-color: #FFFF;
+  }
+
+.section {
+    padding: 2rem 0 7rem;
+}
+
+.subheader {
+    font-weight: 600;
+    color: #4154f1;
+}
+
+.custom-navbar {
+    background: #020c63;
+}
+
+.custom-footer {
+    background-color: #020c63;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.jumbo-bg {
+    background-color: #020c63;
+}
+
+button {
+    background-color: #020c63;
+    color: #fff;
+    /* make a glow effect */
+    box-shadow: 0 0 5px #020c63;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dark-bg {
+    background-color: #f6f9fe;
+}
+
+/* on hover make expand */
+.site:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* make Y Combinator orange, bold, and underline */
+.topic {
+    color: #020c63;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.onwards {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.onwards i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.onwards:hover {
+    color: white;
+}
+
+.onwards:hover i {
+    color: white;
+    transform: translateX(5px);
+}
+
+/* CITATION: https://codepen.io/Itchiii/pen/Ldaoaz */
+.path {
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+    animation: pathAnimation 1.2s linear 0.001s forwards;
+    visibility: hidden;
+} 
+
+.path2 { 
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: pathAnimation2 1.5s linear 1.2s forwards; 
+    visibility: hidden;
+}
+
+.eye {
+    stroke-dasharray: 68;
+    stroke-dashoffset: 68;
+    animation: eyeAnimation .5s linear 2.72s forwards;
+    visibility: hidden;
+}
+
+@keyframes pathAnimation { 
+    from {visibility: hidden; stroke-dashoffset: 572;}
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes pathAnimation2 {  
+    from {visibility: hidden;stroke-dashoffset: 800; }
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes eyeAnimation {  
+    from { visibility: hidden;stroke-dashoffset: 68;}
+    to {visibility: visible; stroke-dashoffset: 0;}
+}
+  
+
+  
