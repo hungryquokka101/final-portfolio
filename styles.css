@@ -1,7 +1,34 @@
+@import url('https://fonts.cdnfonts.com/css/varela-round-2');
+@import url('https://fonts.cdnfonts.com/css/almost-like-the-blues');
 body {
-    font-family: "Sofia-Pro", sans-serif;
-    background-color: #FFFF;
-  }
+    /* font-family: "Sofia-Pro", sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+    background-color: #e7e1fb;
+} 
+
+a.brown-uni {
+    color: #6025bf;
+}
+
+a.brown-uni:hover {
+    color: #a444e3;
+}
+
+a.custom-link {
+    color: white;
+}
+
+a.custom-icons {
+    padding-left: 10px;
+}
+
+a.custom-link:hover {
+    color: #ce95f4;
+}
+
+.cute-header {
+    font-family: 'Almost like the blues', sans-serif;
+}
 
 .section {
     padding: 2rem 0 7rem;
@@ -13,26 +40,38 @@ body {
 }
 
 .custom-navbar {
-    background: #020c63;
+    background: #6025bf;
 }
 
 .custom-footer {
-    background-color: #020c63;
+    background-color: #6025bf;
     color: #fff;
     padding: 2rem 0;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
 }
 
 .jumbo-bg {
     background-color: #020c63;
 }
 
+.card {
+    width: 500px;
+}
+
 .card-img-top {
     height: 400px;
-    width: 100%;
+    width: 500px;
 }
 
 .card-body {
     height: 120px;
+    width: 500px;
 }
 
 button {
@@ -54,8 +93,10 @@ button {
 
 /* on hover make expand */
 .site:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
+    -webkit-transform: rotateZ(-4deg);
+    -ms-transform: rotateZ(-4deg);
+    transform: rotateZ(-4deg);
+    transition: 1s ease;
 }
 
 /* make Y Combinator orange, bold, and underline */
@@ -127,6 +168,238 @@ button {
     from { visibility: hidden;stroke-dashoffset: 68;}
     to {visibility: visible; stroke-dashoffset: 0;}
 }
+
+
+/* CITATION: https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 */
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(to right, #F8C8DC,#E0B0FF);
+    color:white;
+  }
+
+  .logo {
+    width:50px;
+    fill:white;
+    padding-right:15px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  
+  .inner-header {
+    height:80vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+
+
+   /* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+  }
+
+
+
+  .onwards {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.onwards i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.onwards:hover {
+    color: white;
+}
+
+.onwards:hover i {
+    color: white;
+    transform: translateX(5px);
+}
+
+.start {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: rgb(90, 40, 176);
+    background: #fff;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.start i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.start:hover {
+    color: rgb(90, 40, 176);
+}
+
+.start:hover i {
+    color: rgb(90, 40, 176);
+    transform: translateX(5px);
+}
+
+
+/* MAGIC TEXT CSS */
+:root {  
+    --purple: rgb(115, 0, 115);
+    --violet: rgb(90, 40, 176);
+    --pink: rgb(244, 143, 177);
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+  }
   
 
   
+  #magic-main {
+    color: white;
+    /* font-family: 'Grover Heavy', sans-serif; */
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #magic-main > .magic {
+    display: inline-block;
+    position: relative;
+  }
+  
+  #magic-main > .magic > .magic-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+  }
+  
+  #magic-main > .magic > .magic-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  #magic-main > .magic > .magic-star > svg > path {
+    fill: var(--violet);
+  }
+  
+  #magic-main > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+
+  /* Rilakkuma CSS */
+* {margin:0; padding:0; box-sizing:border-box;}
+
+/* body {background-color: #bbb;} */
+.section {
+    padding:20px 0;
+    text-align:center;
+}
+.section h1 {margin-bottom:10px; color:#fff; letter-spacing:3px;}
+.section img {width:250px;}

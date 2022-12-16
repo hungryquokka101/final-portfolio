@@ -9,7 +9,7 @@
 
   <!-- Favicons -->
   <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
-  <link href="favicon.png" rel="icon">
+  <link href="transparent_kuma_head.png" rel="icon">
 
   <!-- Font -->
   <!-- Sofia-Pro Adobe Font -->
@@ -18,6 +18,9 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/varela-round-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almost-like-the-blues" rel="stylesheet">
 
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -52,11 +55,15 @@
 </head>
 <body>
 
+  <script src="index.js"></script>
+
   
   <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
   <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
     <div class="container-fluid">
-      <!-- <a class="navbar-brand text-white" href="#">Orca App Iterative Design</a> -->
+      <a class="navbar-brand text-white cute-header" href="#">
+        <img src="transparent_kuma_head.png" style="width: 40px; height: 40px"/>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,84 +71,132 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="#">About</a>
+            <a class="nav-link cute-header" style="color: white" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: white" href="#projects">Projects</a>
+            <a class="nav-link cute-header" style="color: white" href="#projects">Projects</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+    <!-- CITATION: Header from https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 -->
+  <div class="header mb-5">
 
-  <div class="container py-4">
+    <!--Content before waves-->
+    <div class="inner-header flex">
 
-    <!-- CITATION: JUMBOTRON EXAMPLE FROM https://getbootstrap.com/docs/5.0/examples/#custom-components -->
-    <div class="p-5 mb-4 jumbo-bg rounded-3">
-      <div class="row">
-        <div class="container-fluid py-5 col-md-6">
-          <h1 class="display-5 fw-bold" style="color: white">Hi there!</h1>
-          <p class="col-md-8 fs-4" style="color: white">I’m a designer & story-teller who enjoys sweet and adorable things in life :)</p>
-        </div>
-        <!-- CITATION: Orca Citation https://codepen.io/Itchiii/pen/Ldaoaz -->
-        <div class="col-md-6">
-          <svg x="0px" y="0px" width="250px" height="250px" viewBox="0 0 250 250">
-            <path class="path2" fill="none" stroke="#FFA719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M124.241,151.721c29.446-9.411,64.104-4.367,91.04,42.945c0,0-33.618,3.563-31.382,39.307c22.249,3.821,35.751-15.939,35.751-15.939  c6.006,13.203,22.958,18.904,22.958,18.904c16.673-33.518-14.624-49.546-14.624-49.546C245.333,68.601,167.75,54.5,134.502,52.163  C88.5,49,96.252,18.706,97,7.125C64.875,15,71.667,56.667,68.752,58.141C-45.066,124.14,20.167,201.375,27.667,204.5"/>
-            <path class="path" fill="none" stroke="#FFA719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M219.638,217.784c-5.204-11.196-1.548-24.239-1.548-24.239c-10.28-57.368-44.34-67.251-61.09-76.96s-1.641-16.537,7.68-16.728  s13.737-1.869,13.242-7.182C175.25,81.5,121.75,78.5,111.176,119.907c-3.073,16.19,21.835,39.559,26.068,60.438  c0.684,3.691-5.729,8.884-24.906-0.249c-19.178-9.133-23.088-30.346-33.699-34.514c-43.51-14.963-50.188,59.404-50.188,59.404  c24.735,9.521,36.923-18.126,66.668-38.722"/>
-            <path class="eye" fill="none" stroke="#FFA719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M23.833,146.667c11.667,1.833,14.16-23.786,3.83-25.56S12.167,144.834,23.833,146.667z"/>
-          </svg>
-        </div>
-      </div>
+    <!-- RILAKKUMA CITATION: https://codepen.io/Alicia-B/pen/XMpaKo -->
+    <div class="section">
+      <h1 class="display-5 fw-bold cute-font" style="color: black; font-family: 'Almost like the blues', sans-serif;">Hellow?</h1>
+      <!-- IMAGE CITATION: https://www.pngmart.com/image/197529 -->
+      <img src="Rilakkuma-Transparent-Images-PNG.png" />
     </div>
 
+    <!-- <h1 class="display-5 fw-bold cute-font" style="color: black; font-family: 'Almost like the blues', sans-serif;">Hi there!</h1> -->
+    
+    <!-- MAGIC TEXT CITATION: https://codepen.io/Hyperplexed/pen/YzeOLYe -->
+    <h1 id="magic-main" style="color: black">
+      I’m hungryquokka101, a UX designer & story-teller <br> who enjoys
+      <span class="magic">
+        <span class="magic-star">
+          <svg viewBox="0 0 512 512">
+          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+          </svg>
+        </span>
+        <span class="magic-star">
+          <svg viewBox="0 0 512 512">
+          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+          </svg>
+        </span>
+        <span class="magic-star">
+          <svg viewBox="0 0 512 512">
+          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+          </svg>
+        </span>
+        <span class="magic-text">sweet and adorable things</span>
+      </span>
+      in life!
+    </h1>
+
+   
+    </div>
+     <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+     <div class="flex text-center text-lg-start mb-3">
+      <a href="#about" class="start scrollto d-inline-flex align-items-center justify-content-center align-self-center mb-5">
+        <span>Come with me!</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+    
+  </div>
+  <!--Header ends-->
+
+  <div class="container py-4">
     <div class="row mb-4">
       <div class="col-md-12">
-        <h3 id="projects" class="pb-4 mb-4 border-bottom">
+        <h3 id="about" class="mb-5 mt-3 border-bottom cute-header">
+          About
+        </h3>
+        <p>
+          Bonjour! I'm a junior at <a href="https://www.brown.edu/" class="brown-uni">Brown University</a> studying Computer Science. Outside of CS, I love learning languages. From French to Italian to ancient Egyptian Hieroglyphs, language is my favorite way to learn about the world and explore different cultures. As I strive to find my path, I hope to combine my passions in CS, applied maths and languages.
+        </p>
+        <p>
+          In my free time, I love playing the ukulele, singing and acting. I also can't live without boba and plushies :) 
+        </p>
+
+        <h3 id="projects" class="mb-5 mt-5 border-bottom cute-header">
           Projects
         </h3>
+        <p>
+          <b>Click on the images to view the projects!</b>
+        </p>
 
         <!-- Two projects in a row; two rows for four projects in total -->
         <div class="row">
           <!-- PROJECT ONE -->
-          <div class="col-md-6 col-6">
-            <div class="card">
+          <div class="col-md-6 col-6 d-flex justify-content-center">
+            <div class="card" style="background-color: #f6dbe6">
+              <!-- make clicking image open site, on hover make it expand -->
+              <a href="https://hungryquokka101.github.io/development-writeup/">
+                <img class="site img-fluid card-img-top round-corner" src="transparent_gurashi.png" alt="Iterative Design Project Page">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title cute-header">Floofy Plushies</h5>
+                <p class="card-text">Heaven for plushie lovers: An online plushie shop to find and buy the cutest Japanese plushies</p>
+                <!-- <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        
+          <!-- PROJECT TWO -->
+          <div class="col-md-6 col-6 d-flex justify-content-center">
+            <div class="card" style="background-color: #fcfcd7">
               <!-- make clicking image open site, on hover make it expand -->
               <a href="https://hungryquokka101.github.io/personas/">
-                <img class="site img-fluid card-img-top" src="boba.webp" alt="Iterative Design Project Page">
+                <img class="site img-fluid card-img-top round-corner" src="transparent_boba.png" alt="Iterative Design Project Page">
               </a>
+              <!-- <a href="https://hungryquokka101.github.io/personas/">
+                
+              </a> -->
               <div class="card-body">
-                <h5 class="card-title">Personas & Storyboards</h5>
+                <h5 class="card-title cute-header">Personas & Storyboards</h5>
                 <p class="card-text">A Documented User Research Journey for the boba ordering interface at Tiger Sugar</p>
-                <!-- <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> -->
+                
               </div>
             </div>
           </div>
-
-          <!-- PROJECT TWO -->
-          <div class="col-md-6 col-6">
-            <div class="card">
-              <!-- make clicking image open site, on hover make it expand -->
-              <a href="https://hungryquokka101.github.io/responsive-redesign-writeup/">
-                <img class="site img-fluid card-img-top" src="travel.webp" alt="Iterative Design Project Page">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">U.S. Visa Website Redesign</h5>
-                <p class="card-text">An attempt to make the U.S. visa website more responsive and facilitate the visa application process</p>
-                <!-- <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> -->
-              </div>
-            </div>
-          </div>
-
+        
           <!-- PROJECT THREE -->
-          <div class="col-md-6 col-6 mt-4">
-            <div class="card">
+          <div class="col-md-6 col-6 mt-5 d-flex justify-content-center">
+            <div class="card" style="background-color: #e0f7ff">
               <!-- make clicking image open site, on hover make it expand -->
               <a href="https://jubilatedpanda007.github.io/iterative/?srch-term=#">
-                <img class="site img-fluid card-img-top" src="orca.jpeg" alt="Iterative Design Project Page">
+                <img class="site img-fluid card-img-top round-corner" src="transparent_orca.png" alt="Iterative Design Project Page">
               </a>
               <div class="card-body">
-                <h5 class="card-title">Iterative Design: Orca</h5>
+                <h5 class="card-title cute-header">Iterative Design: Orca</h5>
                 <p class="card-text">Mockup for an online banking app that allows spending money instantly, splitting bills with friends and accessing local perks</p>
                 <!-- <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> -->
               </div>
@@ -149,15 +204,15 @@
           </div>
 
           <!-- PROJECT FOUR -->
-          <div class="col-md-6 col-6 mt-4">
-            <div class="card">
+          <div class="col-md-6 col-6 mt-5 d-flex justify-content-center">
+            <div class="card" style="background-color: #d7f4d7">
               <!-- make clicking image open site, on hover make it expand -->
-              <a href="https://hungryquokka101.github.io/development/">
-                <img class="site img-fluid card-img-top" src="plushie.jpeg" alt="Iterative Design Project Page">
+              <a href="https://hungryquokka101.github.io/responsive-redesign-writeup/">
+                <img class="site img-fluid card-img-top round-corner" src="transparent_globe.png" alt="Iterative Design Project Page">
               </a>
               <div class="card-body">
-                <h5 class="card-title">Floofy Plushies</h5>
-                <p class="card-text">Heaven for plushie lovers: An online plushie shop to find and buy the cutest Japanese plushies</p>
+                <h5 class="card-title cute-header">U.S. Visa Website Redesign</h5>
+                <p class="card-text">An attempt to make the U.S. visa website more responsive and facilitate the visa application process</p>
                 <!-- <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> -->
               </div>
             </div>
@@ -165,6 +220,7 @@
         </div>  
       </div>
     </div>
+  </div>
 
 
 
@@ -172,7 +228,21 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 d-flex justify-content-end align-items-start flex-column footer-mobile">
-            <p class="mb-1">Let's Connect! Click <a href="https://cs.brown.edu/courses/csci1300/">here</a> to contact me </p>
+            <div class="footer-div">
+              <h5 class="mb-1">Let's Connect! Click <a href="https://cs.brown.edu/courses/csci1300/" class="custom-link">here</a> to contact me or find me at </h5>
+              <a href="https://www.linkedin.com/" class="custom-link custom-icons">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="custom-link custom-icons">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.github.com/" class="custom-link custom-icons">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="mt-3">
+              <p class="cute-header">Hungry Quokka Portfolio</p>
+            </div>
           </div>
         </div>
       </div>
@@ -200,7 +270,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
 
       <!-- import index.js in this directory -->
-      <script src="index.js"></script>
 </body>
 
 </html>
