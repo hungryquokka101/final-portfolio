@@ -6,6 +6,8 @@ body {
     background-color: #e7e1fb;
 } 
 
+
+
 a.brown-uni {
     color: #6025bf;
 }
@@ -403,3 +405,21 @@ button {
 }
 .section h1 {margin-bottom:10px; color:#fff; letter-spacing:3px;}
 .section img {width:250px;}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5A5A5A;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#AEC6CF, #E0B0FF,#f39ec1);
+}
+/* disable background on horiztonal scroll */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
